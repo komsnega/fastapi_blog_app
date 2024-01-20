@@ -15,7 +15,7 @@ from .config import settings
 # update 20-Jan-2024: 
 # line below uncommented/commented out to create tables on render.com
 # this is done to create tables once at the very beginning (render.com doesn't create tables with alembic from scratch)
-models.Base.metadata.create_all(bind=engine)
+# models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
